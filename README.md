@@ -169,7 +169,7 @@ ipython
 1. Abrir el archivo:
 
 ```text
-proyecto_m3_agente_soporte.ipynb
+ProyectoM3.ipynb
 ```
 
 2. Ejecutar las celdas en orden.
@@ -406,8 +406,4 @@ proyecto_m3_agente_soporte/
 
 ---
 
-## 15. Conclusión
 
-Este proyecto cumple con la Opción C de la rúbrica porque implementa un agente de soporte con LangGraph que puede recibir consultas, clasificar intención, buscar información, proponer una respuesta, pausar el flujo si el caso es sensible y continuar desde un checkpoint luego de una aprobación humana simulada.
-
-La solución demuestra el uso de estado, nodos separados, checkpoints, `thread_id`, trazabilidad y Human-in-the-loop, que son los elementos centrales esperados para el Proyecto Integrador M3.

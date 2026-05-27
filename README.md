@@ -259,17 +259,13 @@ Con `Command(resume=...)`, el grafo continúa desde el punto pausado y genera la
 
 ---
 
-## 10. Aclaración sobre replay, fork y Human-in-the-loop
+## 10. Aclaración sobre Human-in-the-loop
 
 Este proyecto desarrolla la **Opción C: Agente de soporte**. Por lo tanto, la capacidad clave implementada es:
 
 ```text
 Checkpoint y continuación luego de aprobación humana.
 ```
-
-No se implementa `fork`, porque esa capacidad corresponde a la Opción A, donde se corrige un dato y se crea una nueva rama desde un checkpoint anterior.
-
-No se implementa `replay`, porque esa capacidad corresponde a la Opción B, donde una API externa falla y luego se reintenta desde el checkpoint correcto.
 
 En este proyecto se implementa Human-in-the-loop mediante:
 
@@ -357,53 +353,6 @@ Ticket derivado a revisión
 
 ---
 
-## 12. Valor de LangGraph en el proyecto
 
-LangGraph permite representar el proceso de soporte como un grafo con estado. Esto aporta valor porque:
-
-- Conserva el contexto del ticket durante todo el flujo.
-- Permite separar responsabilidades en nodos.
-- Facilita trazabilidad mediante eventos.
-- Permite pausar el proceso en casos sensibles.
-- Permite continuar desde un checkpoint luego de una revisión humana.
-- Hace posible auditar la evolución del estado mediante `get_state` y `get_state_history`.
-
----
-
-## 13. Estructura recomendada del repositorio
-
-```text
-proyecto_m3_agente_soporte/
-│
-├── README.md
-├── requirements.txt
-├── proyecto_m3_agente_soporte.ipynb
-│
-└── docs/
-    └── descripcion_caso.md
-```
-
----
-
-## 14. Checklist de cumplimiento de la rúbrica
-
-| Requisito | Cumplimiento |
-|---|---|
-| Nombre del proyecto y opción elegida | Sí |
-| Descripción breve del caso de negocio | Sí |
-| Diagrama o descripción del flujo del grafo | Sí |
-| Explicación del estado y campos principales | Sí |
-| Lista de nodos y responsabilidad de cada uno | Sí |
-| Explicación de checkpoints y `thread_id` | Sí |
-| Instrucciones de instalación | Sí |
-| Instrucciones de ejecución | Sí |
-| Reproducción de aprobación humana | Sí |
-| Capturas o resultado esperado de la demo | Sí |
-| Checkpointer implementado | Sí |
-| `thread_id` identificable | Sí |
-| Human-in-the-loop demostrado | Sí |
-| Trazabilidad mediante eventos | Sí |
-
----
 
 

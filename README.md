@@ -1,6 +1,6 @@
 # Proyecto Integrador M3 - Opción C: Agente de Soporte
 
-# Integrantes: 
+## Integrantes: 
 #### William Huaquisaca
 #### Aldair LLana
 

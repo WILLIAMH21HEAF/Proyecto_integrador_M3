@@ -1,5 +1,9 @@
 # Proyecto Integrador M3 - Opción C: Agente de Soporte
 
+#Integrantes: 
+## William Huaquisaca
+## Aldair LLana
+
 ## 1. Nombre del proyecto y opción elegida
 
 **Nombre del proyecto:** Agente de Soporte con LangGraph y Human-in-the-loop
